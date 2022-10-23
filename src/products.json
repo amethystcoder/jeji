@@ -1,0 +1,227 @@
+[
+    {
+    "id": 1,
+     "name":"Adidas X2 Male",
+     "price":"N25,000",
+     "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+     "category":"Clothing",
+     "specificcategory":"Shoes",
+     "quantity": 20
+    },
+    {
+        "id": 2,
+         "name":"Cooking Items Pack",
+         "price":"N68,000",
+         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+         "category":"Utensils",
+         "specificcategory":"Cooking",
+         "quantity": 40
+        },
+    {
+        "id": 3, 
+        "name":"Iphone 11 pro Max",
+        "price":"N350,000",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+        "category":"Gadgets",
+        "specificcategory":"Phones",
+        "quantity": 15
+    },
+    {
+        "id": 4, 
+    "name":"Storm Perfumes",
+    "price":"N10,000",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+    "category":"Cosmetics",
+    "specificcategory":"Perfumes",
+    "quantity": 33
+},
+    {
+        "id": 5,
+         "name":"Denim Jacket",
+         "price":"N27,500",
+         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+         "category":"Clothing",
+         "specificcategory":"Clothes",
+         "quantity": 15
+        },
+        {
+            "id": 6,
+             "name":"Frying Pan Set",
+             "price":"N15,000",
+             "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+             "category":"Utensils",
+             "specificcategory":"Cooking",
+             "quantity": 45
+            },
+            {
+                "id": 7,
+                 "name":"Nike Air Shoes",
+                 "price":"N10,000",
+                 "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                 "category":"Clothing",
+                 "specificcategory":"Shoes",
+                 "quantity": 10
+                },
+            {
+                "id": 8, 
+                "name":"Puma Shoes (Black)",
+                "price":"N7,500",
+                "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                "category":"Clothing",
+                "specificcategory":"Shoes",
+                "quantity": 15
+            },
+            {
+                "id": 9, 
+            "name":"Nail Polish",
+            "price":"N6,000",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+            "category":"Cosmetics or Beauty",
+            "specificcategory":"Nail Polsih",
+            "quantity": 27
+        },
+            {
+                "id": 10,
+                 "name":"Calvin Klein Polish Set",
+                 "price":"N3,500",
+                 "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                 "category":"Cosmetics or Beauty",
+                 "specificcategory":"Nail Polsih",
+                 "quantity": 15
+                },
+                {
+                    "id": 11,
+                     "name":"WAW Detergent Pack",
+                     "price":"N3,000",
+                     "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                     "category":"Groceries",
+                     "specificcategory":"Laundry or Washing",
+                     "quantity": 56
+                    },
+                    {
+                        "id": 12,
+                         "name":"Close-Up ToothPaste",
+                         "price":"N500",
+                         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                         "category":"Hygene",
+                         "specificcategory":"Toothpaste",
+                         "quantity": 40
+                        },
+                    {
+                        "id": 13, 
+                        "name":"Tetmosol Soap Pack",
+                        "price":"N1,000",
+                        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                        "category":"Hygene",
+                        "specificcategory":"Bathing Soap",
+                        "quantity": 57
+                    },
+                    {
+                        "id": 14, 
+                    "name":"Golden Penny Spaghetti",
+                    "price":"N350",
+                    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                    "category":"Groceries",
+                    "specificcategory":"Food",
+                    "quantity": 33
+                },
+                    {
+                        "id": 15,
+                         "name":"Cutlery Set",
+                         "price":"N12,500",
+                         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                         "category":"Utensils",
+                         "specificcategory":"Dining or Cutlery or Cutleries",
+                         "quantity": 15
+                        },
+                        {
+                            "id": 16,
+                             "name":"Ashluxe Shirt",
+                             "price":"N15,000",
+                             "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                             "category":"Clothing",
+                             "specificcategory":"Clothes",
+                             "quantity": 20
+                            },
+                            {
+                                "id": 17,
+                                 "name":"Iphone 14 pro Max",
+                                 "price":"N1,800,000",
+                                 "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                                 "category":"Gadgets",
+                                 "specificcategory":"Phones",
+                                 "quantity": 60
+                                },
+                            {
+                                "id": 18, 
+                                "name":"Iphone X",
+                                "price":"N180,000",
+                                "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                                "category":"Gadgets",
+                                "specificcategory":"Phones",
+                                "quantity": 15
+                            },
+                            {
+                                "id": 19, 
+                            "name":"Play Station 5",
+                            "price":"N450,000",
+                            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                            "category":"Gaming or Gadgets",
+                            "specificcategory":"Gaming or PlayStation or ps",
+                            "quantity": 33
+                        },
+                            {
+                                "id": 20,
+                                 "name":"Play Station 4",
+                                 "price":"N180,500",
+                                 "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                                 "category":"Gaming or Gadgets",
+                                 "specificcategory":"Gaming or PlayStation or ps",
+                                 "quantity": 15
+                                },
+                                {
+                                    "id": 21,
+                                     "name":"Play Station 3",
+                                     "price":"N120,000",
+                                     "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                                     "category":"Gaming or Gadgets",
+                                     "specificcategory":"Gaming or PlayStation or ps",
+                                     "quantity": 20
+                                    },
+                                    {
+                                        "id": 22,
+                                         "name":"Play Station 2",
+                                         "price":"N38,000",
+                                         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                                         "category":"Gaming or Gadgets",
+                                         "specificcategory":"Gaming or PlayStation or ps",
+                                         "quantity": 10
+                                        },
+                                    {
+                                        "id": 23, 
+                                        "name":"Play Station Vita",
+                                        "price":"N20,000",
+                                        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                                        "category":"Gadgets",
+                                        "specificcategory":"Gaming or PlayStation or ps",
+                                        "quantity": 15
+                                    },
+                                    {
+                                        "id": 24, 
+                                    "name":"Denim Jeans Pack(4)",
+                                    "price":"N30,000",
+                                    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                                    "category":"Clothing",
+                                    "specificcategory":"Jeans or Clothes or Trousers",
+                                    "quantity": 33
+                                },
+                                    {
+                                        "id": 25,
+                                         "name":"Iphone 13 Pro",
+                                         "price":"N980,000",
+                                         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, at beatae repudiandae praesentium architecto sunt vitae veritatis cumque et vero vel, neque eligendi corporis labore possimus, temporibus porro qui aliquid.",
+                                         "category":"Clothing",
+                                         "specificcategory":"Clothes",
+                                         "quantity": 15
+                                        }
+]

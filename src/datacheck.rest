@@ -1,0 +1,25 @@
+GET http://localhost:4200/shoppers
+
+### 
+
+POST http://localhost:4200/shoppers 
+content-Type: application/json 
+
+{
+        "Username": "Emma",
+        "Password": "Ajijola1956",
+        "Passcode": 435646,
+        "CardNumber": 1234567891011121,
+        "ExpiryDate": "12/31",
+        "CVC": 565,
+        "HouseNumber":25,
+        "Street":"Moniya",
+        "City":"Ibadan",
+        "State":"Oyo",
+        "PostalCode": 12345
+        
+}
+
+###
+
+GET http://localhost:4200/
