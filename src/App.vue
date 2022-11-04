@@ -3,8 +3,20 @@
 
 import CartVue from './components/Cart.vue'
 
+import axios from 'axios'
+import { ref } from 'vue'
+
+
 export default {
   name: 'App',
+  setup(){
+    const user = ref('')
+    axios.get('http://localhost:4200/shoppers')
+    .then(response => user.value = response)
+
+    return {user}
+  }
+  ,
   data(){
     return{
       cartamt: CartVue.data().cartitems.length,

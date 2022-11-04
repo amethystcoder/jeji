@@ -1,5 +1,4 @@
 <script>
-
 import axios from 'axios'
 
 export default {
@@ -9,47 +8,33 @@ export default {
       i:0,
       proddata: [],
       convincer : [
-        {id:1,word:'Try these out'},
-        {id:1,word:'Try these out'},
-        {id:1,word:'Try these out'},
-        {id:1,word:'Try these out'},
-        {id:1,word:'Try these out'},
+        {id:1,word:'New Products'},
+        {id:1,word:'Grocery Items',keywords:'Groceries'},
+        {id:1,word:'Gaming Accessories',keywords:'Gaming or Gadgets'},
+        {id:1,word:'Phones and Laptops',keywords:'Gadgets'},
+        {id:1,word:'Kitchen Utensils',keywords:'Utensils'},
+        {id:1,word:'Fashion and Cosmetics',keywords:'Cosmetics or Beauty'},
         ],
-      products: [
-        {id: 1, name:'Adidas X2 Male',price:'N25,000'},
-        {id: 2, name:'Cooking Items Pack',price:'N68,000'},
-        {id: 3, name:'Iphone 11 pro Max',price:'N350,000'},
-        {id: 4, name:'Storm Perfumes',price:'N10,000'},
-        {id: 5, name:'Denim Jacket',price:'N27,500'}
-      ]
+      products: []
     }
   },
   methods:{
     sendprodprops(prodname,prodid){
       this.$router.push({name:'ProductDescription',params:{productname:prodname,productid:prodid}})
     },
+    additems(item){
+      return this.products.filter(elem => elem.category = item)
+    },
     addmoreitems(){
-      for(this.i=0;this.i<5;this.i++){
-        this.convincer.push({id:1,word:'Try these out'})
-      }
-      this.products.push(
-        {id: 1, name:'Adidas X2 Male',price:'N25,000'},
-        {id: 2, name:'Cooking Items Pack',price:'N68,000'},
-        {id: 3, name:'Iphone 11 pro Max',price:'N350,000'},
-        {id: 4, name:'Storm Perfumes',price:'N10,000'},
-        {id: 5, name:'Denim Jacket',price:'N27,500'}
-        )
     }
   },
-  created(){
-     axios.get('http://localhost:4200/')
-    .then(response => this.proddata = response)
-  },
   mounted(){
-    window.addEventListener('scroll',()=>{
-      if(this.convincer[this.convincer.length -1].word.getBoundingClientRect().bottom < window.innerHeight){
-        this.addmoreitems()
-      }
+    axios.get('http://localhost:3000/')
+    .then(response => {
+      this.products = response.data
+    })
+    .catch((err)=>{
+      console.log(err)
     })
   }
   }
@@ -59,11 +44,11 @@ export default {
 <div class="placeholder_box" v-for="convince in convincer" :key="convince.id">
     <h2 class="convicer">{{convince.word}}</h2>
     <div class="boxescontainer">
-    <div class="boxes" v-for="product in products" :key="product.id">
+    <div class="boxes" v-for="product in additems(convince.keywords)" :key="product.id">
       <div class="baseimg" @click="sendprodprops(product.name,product.id)"></div>
       <h4>{{product.name}}</h4>
       <p>{{product.price}}</p>
-        <div class="button">Add to Cart</div>
+        <div class="button">Add to Cart</div> 
     </div>
     </div>
   </div>

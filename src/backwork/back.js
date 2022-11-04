@@ -1,5 +1,6 @@
 const express = require('express')
 const mongo = require('mongoose')
+const cors = require('cors')
 
 mongo.connect('mongodb://127.0.0.1:27017/shoppers',{useNewUrlParser: true})
 
@@ -10,6 +11,10 @@ database.once('connection', () => console.log('DatAbase started successfully'))
 
 const expressapp = express()
 let PORT = 4200
+
+expressapp.use(cors({
+    origin:'http://localhost:8080'
+}))
 
 expressapp.listen(PORT, () => {
     console.log('server started')
