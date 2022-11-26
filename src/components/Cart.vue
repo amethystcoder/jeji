@@ -1,4 +1,7 @@
 <script>
+
+import axios from 'axios'
+
 export default{
     name: 'CartPage',
     data(){
@@ -10,7 +13,16 @@ export default{
         elremove(id){
             this.cartitems.remove(this.cartitems[id])
         }
-    }
+    },
+    mounted(){
+    axios.get('http://localhost:4200/cart')
+    .then(response => {
+      this.cartitems = response.data
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
+  }
 }
 </script>
 

@@ -6,6 +6,8 @@ export default{
         return{
             newuserdata:{
                 Username:'',
+                Email:'',
+                PhoneNumber:'',
                 Password: '',
                 Passcode: 0,
                 CardNumber: 0,
@@ -17,7 +19,7 @@ export default{
                 State:'',
                 PostalCode:0
             },
-            canlogin: false
+            canlogin: true
         }
     },
     methods:{
@@ -26,17 +28,13 @@ export default{
                 console.log('not all inputs are filled')
             }
             else{
-                axios.post('http://localhost:4200/',this.newuserdata,{headers:''})
+                axios.post('http://localhost:4200/shoppers',this.newuserdata)
+
+                this.$router.push({name:'home'})
             }
         }
     },
     mounted(){
-        if(this.newuserdata.Username == '' || this.newuserdata.Password == '' || this.newuserdata.ExpiryDate == '' || this.newuserdata.Street == '' || this.newuserdata.City == '' || this.newuserdata.State == ''){
-                this.canlogin = false
-            }
-            else{
-                this.canlogin = true
-            }
     }
 }
 </script>
@@ -50,13 +48,13 @@ export default{
         <div id="signupndiv">Sign up</div>
 </div>
 <div>
-    <input type="text" placeholder="Name or Username">
+    <input type="text" placeholder="Name or Username" v-model="newuserdata.Username">
     <br>
-    <input type="text" placeholder="Email">
+    <input type="text" placeholder="Email" v-model="newuserdata.Email">
     <br>
-    <input type="text" placeholder="Phone Number">
+    <input type="text" placeholder="Phone Number" v-model="newuserdata.PhoneNumber">
     <br>
-    <input type="text" placeholder="Password">
+    <input type="text" placeholder="Password" v-model="newuserdata.Password">
     <br>
     <input type="text" placeholder="Re-enter Password">
     <br>
@@ -64,21 +62,21 @@ export default{
 <div class="divisions">
     <h1>Delivery Address</h1>
     <div id="containsaddresses">
-    <input type="text" placeholder="House number/Apt">
+    <input type="text" placeholder="House number/Apt" v-model="newuserdata.HouseNumber">
     <br>
-    <input type="text" placeholder="Street" class="shorterone">
-    <input type="text" placeholder="City" class="shortertwo">
-    <input type="text" placeholder="State" class="shorterone">
-    <input type="text" placeholder="Postal Code" class="shortertwo">
+    <input type="text" placeholder="Street" class="shorterone" v-model="newuserdata.Street">
+    <input type="text" placeholder="City" class="shortertwo" v-model="newuserdata.City">
+    <input type="text" placeholder="State" class="shorterone" v-model="newuserdata.State">
+    <input type="text" placeholder="Postal Code" class="shortertwo" v-model="newuserdata.PostalCode">
     </div>
     
 </div>
 <div class="divisions">
     <h1>Payment Information</h1>
-    <input type="text" placeholder="Card Number">
+    <input type="text" placeholder="Card Number" v-model="newuserdata.CardNumber">
     <br>
-    <input type="text" placeholder="Expiration date" class="shorterone">
-    <input type="text" placeholder="CVC" class="shortertwo">
+    <input type="text" placeholder="Expiration date" class="shorterone" v-model="newuserdata.ExpiryDate">
+    <input type="text" placeholder="CVC" class="shortertwo" v-model="newuserdata.CVC">
     <br>
     <select id="otherpayment">
         <option>other payment options</option>

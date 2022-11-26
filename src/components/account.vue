@@ -1,10 +1,22 @@
 <script>
+
+import axios from 'axios'
+
 export default{
     name: 'AccountPage',
     data(){
         return{
-
+            thisaccount : []
         }
+    },
+    mounted(){
+        axios.get('http://localhost:4200/shoppers')
+    .then(response => {
+      this.thisaccount = response.data
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
     }
 }
 </script>

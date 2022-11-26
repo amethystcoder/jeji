@@ -5,6 +5,13 @@ const userschema = new datamodel.Schema({
         type: String,
         required: true
     },
+    Email:{
+        type:String,
+        default:''
+    },
+    PhoneNumber:{
+        type:String
+    },
     Password:{
         type: String,
         required: true

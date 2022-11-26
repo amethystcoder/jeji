@@ -19,7 +19,7 @@ const router = createRouter({
     routes:[
         {path:'/forme',component:Forme, name:Forme},
         {path:'/setting',component:Setting,name:Setting},
-        {path:'/',component:Home,name:Home},
+        {path:'/',component:Home,name:'home'},
         {path:'/ProductDescription/:productname/:productid',component:ProductDescription,name:'ProductDescription'},
         {path:'/CartPage',component:Cart,name:Cart},
         {path:'/AccountPage',component:Account,name:Account},

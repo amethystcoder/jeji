@@ -16,6 +16,10 @@ expressapp.use(cors({
     origin:'http://localhost:8080'
 }))
 
+expressapp.get('/cart', (req,res)=>{
+    
+})
+
 expressapp.listen(PORT, () => {
     console.log('server started')
 })

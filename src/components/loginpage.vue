@@ -1,11 +1,46 @@
 <script>
+
+import axios from 'axios';
+
 export default{
     name: 'LoginPage',
     data(){
         return{
-
+            users:[],
+            user:{
+                username:'',
+                password:''
+            }
         }
-    }
+    },
+    methods:{
+        signin(){
+            if (this.user.username == ''){
+                console.log('non')
+            }
+            else{
+                axios.get('http://localhost:4200/shoppers/'+this.user.username)
+                .then(response => {
+                this.users = response.data
+            }).catch((err)=>{
+                console.log(err)
+            })
+            if(this.users.length == 0 ){
+                console.log('non')
+            }
+            else{
+                this.$router.push({name:'home'})
+            }
+            }
+    },
+        checkpassword(){
+           return this.users.filter((gtnuser)=>{
+            gtnuser.Password == this.user.password 
+           })
+        }
+    },
+    mounted(){
+        }
 }
 </script>
 
@@ -17,11 +52,11 @@ export default{
         <div id="signupdiv">Sign up</div>
     </router-link>
 </div>
-<input type="text" placeholder="Email or Phone number">
+<input type="email" placeholder="Email or Username" v-model="user.username">
 <br>
-<input type="text" placeholder="Password">
+<input type="password" placeholder="Password" v-model="user.password">
 <br><br><br><br>
-<div id="signinbutton">Sign In</div>
+<div id="signinbutton" @click="signin()">Sign In</div>
 <h1 style="text-align: center;">Or</h1>
 <div class="otheroptions">
     Sign in with Google
@@ -72,7 +107,7 @@ input{
     padding: 10px;
     border: hidden;
     border-radius: 15px;
-    width: 12vw;
+    width: max-content;
     margin-left: 40vw;
     margin-bottom: 30px;
 }

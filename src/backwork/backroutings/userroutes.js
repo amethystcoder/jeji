@@ -4,17 +4,17 @@ const dbase = require('../datamodel/datamodels')
 
 routes.get('/', async (req,res)=>{
     try{
-       const shopper = await dbase.find()
-       res.status(202).json(shopper)
+       const shoppers = await dbase.find()
+       res.status(202).json(shoppers)
     }
     catch (err) {
         res.status(500).json({errormsg: err.message})
     }
 })
 
-routes.get('/:id', async (req,res)=>{
+routes.get('/:username', async (req,res)=>{
     try{
-       const shopper = await dbase.findById('id')
+       const shopper = await dbase.find({Username:req.params.username})
        res.status(202).json(shopper)
     }
     catch (err) {

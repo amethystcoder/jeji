@@ -19,11 +19,25 @@ let cleaneddata = JSON.parse(productsdata)
 
 console.log(cleaneddata)
 
+function selectpart(data){
+   return cleaneddata.filter((dt)=>{
+    dt.category == data })
+}
+
 expapp.get('/',(req,res)=>{
     try{
         res.status(202).send(cleaneddata)
     }
     catch(err){
         res.send(err)
+    }
+})
+
+expapp.get('/:category',(req,res)=>{
+    try{
+        res.status(202).send(selectpart(req.params.category))
+    }
+    catch(err){
+        res.status(404).json(err)
     }
 })

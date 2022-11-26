@@ -20,7 +20,6 @@ export default {
   data(){
     return{
       cartamt: CartVue.data().cartitems.length,
-
       appname : 'Jeji',
       name: this.$route.path.split('/')[1],
       newname: ''

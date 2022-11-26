@@ -1,4 +1,7 @@
 <script>
+
+import axios from 'axios'
+
 export default{
     name: 'FormePage',
     data(){
@@ -21,12 +24,22 @@ export default{
     sendprodprops(prodname,prodid){
       this.$router.push({name:'ProductDescription',params:{productname:prodname,productid:prodid}})
     }
+  },
+  mounted(){
+    axios.get('http://localhost:3000/')
+    .then(response => {
+      this.products = response.data
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
   }
 }
 </script>
 
 <template>
-<div class="placeholder_box" v-for="keys in keywords" :key="keys.id">
+  <div v-if="products.length>0">
+    <div class="placeholder_box" v-for="keys in keywords" :key="keys.id">
     <h2 class="convicer">{{keys.key}}</h2>
     <div class="boxescontainer">
     <div class="boxes" v-for="product in products" :key="product.id">
@@ -38,6 +51,13 @@ export default{
       </router-link>
       
     </div>
+    </div>
+  </div>
+  </div>
+
+  <div v-if="products.length == 0" id="whenempty">
+    <div id="rotater">
+      <div id="rotated"></div>
     </div>
   </div>
   <div id="bottomofproducts"></div>

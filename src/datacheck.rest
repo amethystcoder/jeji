@@ -17,7 +17,6 @@ content-Type: application/json
         "City":"Ibadan",
         "State":"Oyo",
         "PostalCode": 12345
-        
 }
 
 ###
